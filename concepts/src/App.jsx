@@ -9,6 +9,7 @@ import { LengthConverter } from './lifting-state-up/Converter.jsx';
 import { SomethingCool } from './composition-vs-inheritance/SomethingCool.jsx';
 import { FilterableProductTable } from './thinking-in-react/Table.jsx';
 import ContextExample from './deeply-data-and-context/Example';
+import ContextChallenge from './deeply-data-and-context/Challenge';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <LengthConverter /> */}
       {/* <SomethingCool /> */}
       {/* <FilterableProductTable /> */}
-      <ContextExample />
+      {/* <ContextExample /> */}
+      <ContextChallenge />
     </div>
   );
 }
