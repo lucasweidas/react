@@ -1,18 +1,16 @@
 import { createContext, useContext, useState } from 'react';
 
 const TasksContext = createContext([]);
-let idCount;
 
 (() => {
-  idCount = sessionStorage.getItem('idCount');
-  if (idCount) return;
-  idCount = 0;
+  if (sessionStorage.getItem('savedInfo')) return;
+  sessionStorage.setItem('savedInfo', true);
   updateIdCount(0);
   updateTasks([]);
 })();
 
 export default function Todo() {
-  const [tasks, setTasks] = useState(getTasks() ?? []);
+  const [tasks, setTasks] = useState(getTasks());
 
   return (
     <>
@@ -30,11 +28,11 @@ function Form() {
   const handleChange = ({ target }) => setTaskValue(target.value);
   const handleSubmit = e => {
     e.preventDefault();
-    const task = { text: taskValue, id: idCount++, isCompleted: false };
-    tasks.push(task);
-    updateIdCount(idCount);
+    const idCount = getIdCount();
+    const task = { text: taskValue, id: idCount, completed: false };
+    updateIdCount(idCount + 1);
     saveTask(task);
-    setTasks([...tasks]);
+    setTasks([...tasks, task]);
   };
 
   return (
@@ -47,20 +45,17 @@ function Form() {
 
 function TodoList() {
   const { tasks } = useContext(TasksContext);
-  let listItems = [];
-  for (const task of tasks) {
-    listItems.push(<TodoTask key={task.id} {...task} />);
-  }
+  const listItems = tasks.map(task => <TodoTask key={task.id} {...task} />);
 
   return <ul style={{ listStyle: 'none', padding: '0' }}>{listItems}</ul>;
 }
 
-function TodoTask({ text, id, isCompleted: completed }) {
+function TodoTask({ text, id, completed }) {
   const { setTasks } = useContext(TasksContext);
   const [isCompleted, setIsCompleted] = useState(!!completed);
   const handleCompletion = ({ target }) => {
     const { checked } = target;
-    updateTask(id, 'isCompleted', checked);
+    updateTask(id, 'completed', checked);
     setIsCompleted(checked);
   };
   const handleDelete = () => setTasks(deleteTask(id));
@@ -88,6 +83,11 @@ function getTasks() {
 
 function updateTasks(tasks) {
   sessionStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function getIdCount() {
+  const idCount = sessionStorage.getItem('idCount');
+  return parseInt(idCount ?? 0);
 }
 
 function updateIdCount(idCount) {
