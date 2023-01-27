@@ -52,13 +52,13 @@ function TodoList() {
 
 function TodoTask({ text, id, completed }) {
   const { setTasks } = useContext(TasksContext);
-  const [isCompleted, setIsCompleted] = useState(!!completed);
-  const handleCompletion = ({ target }) => {
+  const [isComplete, setIsComplete] = useState(!!completed);
+  const handleChange = ({ target }) => {
     const { checked } = target;
     updateTask(id, 'completed', checked);
-    setIsCompleted(checked);
+    setIsComplete(checked);
   };
-  const handleDelete = () => setTasks(deleteTask(id));
+  const handleClick = () => setTasks(deleteTask(id));
 
   return (
     <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
@@ -69,10 +69,10 @@ function TodoTask({ text, id, completed }) {
           alignItems: 'center',
         }}
       >
-        <input type="checkbox" value={isCompleted} checked={isCompleted} onChange={handleCompletion} />
-        <span style={{ textDecoration: isCompleted ? '1px solid line-through' : 'none', opacity: isCompleted ? '0.6' : '1' }}>{text}</span>
+        <input type="checkbox" value={isComplete} checked={isComplete} onChange={handleChange} />
+        <span style={{ textDecoration: isComplete ? '1px solid line-through' : 'none', opacity: isComplete ? '0.6' : '1' }}>{text}</span>
       </label>
-      <button onClick={handleDelete}>X</button>
+      <button onClick={handleClick}>X</button>
     </li>
   );
 }
