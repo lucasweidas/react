@@ -11,6 +11,7 @@ import { FilterableProductTable } from './thinking-in-react/Table.jsx';
 import ContextExample from './deeply-data-and-context/Example';
 import ContextChallenge from './deeply-data-and-context/Challenge';
 import SculptureGallery from './adding-interactivity/Example.jsx';
+import UpdaterExample from './queueing-state-updates/Example.jsx';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <FilterableProductTable /> */}
       {/* <ContextExample /> */}
       {/* <ContextChallenge /> */}
-      <SculptureGallery />
+      {/* <SculptureGallery /> */}
+      <UpdaterExample />
     </div>
   );
 }
