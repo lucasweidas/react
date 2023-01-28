@@ -12,6 +12,11 @@ import ContextExample from './deeply-data-and-context/Example';
 import ContextChallenge from './deeply-data-and-context/Challenge';
 import SculptureGallery from './adding-interactivity/Example.jsx';
 import UpdaterExample from './queueing-state-updates/Example.jsx';
+import ObjectState from './updating-objects-in-state/Example.jsx';
+import ObjectState2 from './updating-objects-in-state/Example2.jsx';
+import ObjectState3 from './updating-objects-in-state/Example3.jsx';
+import ObjectState4 from './updating-objects-in-state/Example4.jsx';
+import ArrayState from './updating-arrays-in-state/Example.jsx';
 
 function App() {
   return (
@@ -34,7 +39,12 @@ function App() {
       {/* <ContextExample /> */}
       {/* <ContextChallenge /> */}
       {/* <SculptureGallery /> */}
-      <UpdaterExample />
+      {/* <UpdaterExample /> */}
+      {/* <ObjectState /> */}
+      {/* <ObjectState2 /> */}
+      {/* <ObjectState3 /> */}
+      {/* <ObjectState4 /> */}
+      <ArrayState />
     </div>
   );
 }
