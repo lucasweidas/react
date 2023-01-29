@@ -17,6 +17,9 @@ import ObjectState2 from './updating-objects-in-state/Example2.jsx';
 import ObjectState3 from './updating-objects-in-state/Example3.jsx';
 import ObjectState4 from './updating-objects-in-state/Example4.jsx';
 import ArrayState from './updating-arrays-in-state/Example.jsx';
+import ArrayState2 from './updating-arrays-in-state/Example2.jsx';
+import ArrayState3 from './updating-arrays-in-state/Example3.jsx';
+import ArrayState4 from './updating-arrays-in-state/Example4.jsx';
 
 function App() {
   return (
@@ -44,7 +47,10 @@ function App() {
       {/* <ObjectState2 /> */}
       {/* <ObjectState3 /> */}
       {/* <ObjectState4 /> */}
-      <ArrayState />
+      {/* <ArrayState /> */}
+      {/* <ArrayState2 /> */}
+      {/* <ArrayState3 /> */}
+      <ArrayState4 />
     </div>
   );
 }
