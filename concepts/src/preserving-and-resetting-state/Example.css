@@ -1,0 +1,22 @@
+.example-app {
+  display: grid;
+  gap: 20px;
+  padding: 16px;
+}
+
+.counter {
+  width: 150px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+}
+
+.counter.hover {
+  background-color: rgb(58, 58, 58);
+}
+
+.counter.fancy {
+  border: 3px solid rgb(25, 209, 255);
+  color: rgb(255, 240, 28);
+}

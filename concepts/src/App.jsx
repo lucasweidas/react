@@ -6,6 +6,7 @@ import { Login } from './handling-events/Login.jsx';
 import { List } from './lists-and-keys/List.jsx';
 import { SomeForm } from './forms/SomeForm.jsx';
 import { LengthConverter } from './lifting-state-up/Converter.jsx';
+import AccordionExample from './lifting-state-up/Accordion.jsx';
 import { SomethingCool } from './composition-vs-inheritance/SomethingCool.jsx';
 import { FilterableProductTable } from './thinking-in-react/Table.jsx';
 import ContextExample from './deeply-data-and-context/Example';
@@ -20,6 +21,9 @@ import ArrayState from './updating-arrays-in-state/Example.jsx';
 import ArrayState2 from './updating-arrays-in-state/Example2.jsx';
 import ArrayState3 from './updating-arrays-in-state/Example3.jsx';
 import ArrayState4 from './updating-arrays-in-state/Example4.jsx';
+import ResettingState from './preserving-and-resetting-state/Example.jsx';
+import PreservingState from './preserving-and-resetting-state/Example2.jsx';
+import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
 
 function App() {
   return (
@@ -50,7 +54,11 @@ function App() {
       {/* <ArrayState /> */}
       {/* <ArrayState2 /> */}
       {/* <ArrayState3 /> */}
-      <ArrayState4 />
+      {/* <ArrayState4 /> */}
+      {/* <AccordionExample /> */}
+      {/* <ResettingState /> */}
+      {/* <PreservingState /> */}
+      <ResettingChat />
     </div>
   );
 }
