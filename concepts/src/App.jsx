@@ -24,6 +24,8 @@ import ArrayState4 from './updating-arrays-in-state/Example4.jsx';
 import ResettingState from './preserving-and-resetting-state/Example.jsx';
 import PreservingState from './preserving-and-resetting-state/Example2.jsx';
 import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
+import ReducerExample from './state-into-reducer/Example.jsx';
+import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
 
 function App() {
   return (
@@ -58,7 +60,9 @@ function App() {
       {/* <AccordionExample /> */}
       {/* <ResettingState /> */}
       {/* <PreservingState /> */}
-      <ResettingChat />
+      {/* <ResettingChat /> */}
+      <ReducerExample />
+      <ReducerImmerExample />
     </div>
   );
 }
