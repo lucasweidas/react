@@ -27,7 +27,7 @@ import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
 import ReducerExample from './state-into-reducer/Example.jsx';
 import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       {/* <Intro /> */}
@@ -66,5 +66,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
