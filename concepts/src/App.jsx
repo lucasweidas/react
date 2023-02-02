@@ -1,3 +1,5 @@
+import { useImmer } from 'use-immer';
+import { useState } from 'react';
 import './App.css';
 import Intro from './intro-jsx/Intro.jsx';
 import { Welcome, Comment } from './components-and-props/Components.jsx';
@@ -61,8 +63,8 @@ export default function App() {
       {/* <ResettingState /> */}
       {/* <PreservingState /> */}
       {/* <ResettingChat /> */}
-      <ReducerExample />
-      <ReducerImmerExample />
+      {/* <ReducerExample /> */}
+      {/* <ReducerImmerExample /> */}
     </div>
   );
 }
