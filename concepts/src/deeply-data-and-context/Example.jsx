@@ -5,7 +5,7 @@ import { LevelContext } from './LevelContext';
 export default function Example() {
   return (
     <div>
-      <Section level={1}>
+      <Section parentLevel={1}>
         <Heading>Heading 1</Heading>
         <Section>
           <Heading>Heading 2</Heading>
@@ -32,11 +32,11 @@ export default function Example() {
 }
 
 // If a value isn't specified in the whole context tree, it will get the default value passed in "createContext()"
-function Section({ level, children }) {
-  const parentLevel = useContext(LevelContext);
+function Section({ parentLevel, children }) {
+  const level = useContext(LevelContext);
   return (
     <section style={{ padding: '1rem', border: '1px solid hsl(200, 100%, 50%)', borderRadius: '1rem' }}>
-      <LevelContext.Provider value={level ?? parentLevel + 1}>{children}</LevelContext.Provider>
+      <LevelContext.Provider value={parentLevel ?? level + 1}>{children}</LevelContext.Provider>
     </section>
   );
 }
