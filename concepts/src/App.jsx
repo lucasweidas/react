@@ -29,6 +29,7 @@ import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
 import ReducerExample from './state-into-reducer/Example.jsx';
 import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
 import ReducerWithContext from './scaling-up-with-reducer-and-context/Example.jsx';
+import Stopwatch from './eferencing-values-with-refs/Example';
 
 export default function App() {
   return (
@@ -66,7 +67,8 @@ export default function App() {
       {/* <ResettingChat /> */}
       {/* <ReducerExample /> */}
       {/* <ReducerImmerExample /> */}
-      <ReducerWithContext />
+      {/* <ReducerWithContext /> */}
+      <Stopwatch />
     </div>
   );
 }
