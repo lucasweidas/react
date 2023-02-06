@@ -31,6 +31,7 @@ import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
 import ReducerWithContext from './scaling-up-with-reducer-and-context/Example.jsx';
 import Stopwatch from './eferencing-values-with-refs/Example';
 import DomNodeRef from './manipulating-the-dom-with-refs/Example';
+import CatListRef from './manipulating-the-dom-with-refs/Example2';
 
 export default function App() {
   return (
@@ -69,8 +70,9 @@ export default function App() {
       {/* <ReducerExample /> */}
       {/* <ReducerImmerExample /> */}
       {/* <ReducerWithContext /> */}
-      <Stopwatch />
-      <DomNodeRef />
+      {/* <Stopwatch /> */}
+      {/* <DomNodeRef /> */}
+      <CatListRef />
     </div>
   );
 }

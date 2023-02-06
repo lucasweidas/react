@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul {
+  max-width: 750px;
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  display: inline-flex;
+  vertical-align: middle;
+  border: 5px solid transparent;
+}
+
+.active {
+  border-color: hsl(209, 100%, 60%);
+}
