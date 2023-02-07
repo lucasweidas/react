@@ -32,6 +32,8 @@ import ReducerWithContext from './scaling-up-with-reducer-and-context/Example.js
 import Stopwatch from './eferencing-values-with-refs/Example';
 import DomNodeRef from './manipulating-the-dom-with-refs/Example';
 import CatListRef from './manipulating-the-dom-with-refs/Example2';
+import EffectExample from './synchronizing-with-effects/Example';
+import EffectExample2 from './synchronizing-with-effects/Example2';
 
 export default function App() {
   return (
@@ -72,7 +74,9 @@ export default function App() {
       {/* <ReducerWithContext /> */}
       {/* <Stopwatch /> */}
       {/* <DomNodeRef /> */}
-      <CatListRef />
+      {/* <CatListRef /> */}
+      {/* <EffectExample /> */}
+      <EffectExample2 />
     </div>
   );
 }
