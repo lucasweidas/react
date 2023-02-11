@@ -34,6 +34,8 @@ import DomNodeRef from './manipulating-the-dom-with-refs/Example';
 import CatListRef from './manipulating-the-dom-with-refs/Example2';
 import EffectExample from './synchronizing-with-effects/Example';
 import EffectExample2 from './synchronizing-with-effects/Example2';
+import CustomHookExample from './reusing-logic-with-custom-hooks/Example';
+import CustomHookExample2 from './reusing-logic-with-custom-hooks/Example2';
 
 export default function App() {
   return (
@@ -76,7 +78,9 @@ export default function App() {
       {/* <DomNodeRef /> */}
       {/* <CatListRef /> */}
       {/* <EffectExample /> */}
-      <EffectExample2 />
+      {/* <EffectExample2 /> */}
+      <CustomHookExample />
+      <CustomHookExample2 />
     </div>
   );
 }
