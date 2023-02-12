@@ -36,6 +36,7 @@ import EffectExample from './synchronizing-with-effects/Example';
 import EffectExample2 from './synchronizing-with-effects/Example2';
 import CustomHookExample from './reusing-logic-with-custom-hooks/Example';
 import CustomHookExample2 from './reusing-logic-with-custom-hooks/Example2';
+import UseCallbackExample from './use-callback-hook/Example';
 
 export default function App() {
   return (
@@ -79,8 +80,9 @@ export default function App() {
       {/* <CatListRef /> */}
       {/* <EffectExample /> */}
       {/* <EffectExample2 /> */}
-      <CustomHookExample />
-      <CustomHookExample2 />
+      {/* <CustomHookExample /> */}
+      {/* <CustomHookExample2 /> */}
+      <UseCallbackExample />
     </div>
   );
 }
