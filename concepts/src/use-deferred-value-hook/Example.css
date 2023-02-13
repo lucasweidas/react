@@ -1,0 +1,8 @@
+ul {
+  list-style: disc;
+  overflow: auto;
+  white-space: normal;
+}
+li {
+  display: list-item;
+}

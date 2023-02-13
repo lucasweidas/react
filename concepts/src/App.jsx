@@ -1,42 +1,43 @@
-import { useImmer } from 'use-immer';
-import { useState } from 'react';
 import './App.css';
-import Intro from './intro-jsx/Intro.jsx';
-import { Welcome, Comment } from './components-and-props/Components.jsx';
-import { ClockF, ClockC } from './state-and-lifecycle/Clock.jsx';
-import { Login } from './handling-events/Login.jsx';
-import { List } from './lists-and-keys/List.jsx';
-import { SomeForm } from './forms/SomeForm.jsx';
-import { LengthConverter } from './lifting-state-up/Converter.jsx';
-import AccordionExample from './lifting-state-up/Accordion.jsx';
-import { SomethingCool } from './composition-vs-inheritance/SomethingCool.jsx';
-import { FilterableProductTable } from './thinking-in-react/Table.jsx';
-import ContextExample from './deeply-data-and-context/Example';
-import ContextChallenge from './deeply-data-and-context/Challenge';
-import SculptureGallery from './adding-interactivity/Example.jsx';
-import UpdaterExample from './queueing-state-updates/Example.jsx';
-import ObjectState from './updating-objects-in-state/Example.jsx';
-import ObjectState2 from './updating-objects-in-state/Example2.jsx';
-import ObjectState3 from './updating-objects-in-state/Example3.jsx';
-import ObjectState4 from './updating-objects-in-state/Example4.jsx';
-import ArrayState from './updating-arrays-in-state/Example.jsx';
-import ArrayState2 from './updating-arrays-in-state/Example2.jsx';
-import ArrayState3 from './updating-arrays-in-state/Example3.jsx';
-import ArrayState4 from './updating-arrays-in-state/Example4.jsx';
-import ResettingState from './preserving-and-resetting-state/Example.jsx';
-import PreservingState from './preserving-and-resetting-state/Example2.jsx';
-import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
-import ReducerExample from './state-into-reducer/Example.jsx';
-import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
-import ReducerWithContext from './scaling-up-with-reducer-and-context/Example.jsx';
-import Stopwatch from './eferencing-values-with-refs/Example';
-import DomNodeRef from './manipulating-the-dom-with-refs/Example';
-import CatListRef from './manipulating-the-dom-with-refs/Example2';
-import EffectExample from './synchronizing-with-effects/Example';
-import EffectExample2 from './synchronizing-with-effects/Example2';
-import CustomHookExample from './reusing-logic-with-custom-hooks/Example';
-import CustomHookExample2 from './reusing-logic-with-custom-hooks/Example2';
-import UseCallbackExample from './use-callback-hook/Example';
+// import { useImmer } from 'use-immer';
+// import { useState } from 'react';
+// import Intro from './intro-jsx/Intro.jsx';
+// import { Welcome, Comment } from './components-and-props/Components.jsx';
+// import { ClockF, ClockC } from './state-and-lifecycle/Clock.jsx';
+// import { Login } from './handling-events/Login.jsx';
+// import { List } from './lists-and-keys/List.jsx';
+// import { SomeForm } from './forms/SomeForm.jsx';
+// import { LengthConverter } from './lifting-state-up/Converter.jsx';
+// import AccordionExample from './lifting-state-up/Accordion.jsx';
+// import { SomethingCool } from './composition-vs-inheritance/SomethingCool.jsx';
+// import { FilterableProductTable } from './thinking-in-react/Table.jsx';
+// import ContextExample from './deeply-data-and-context/Example';
+// import ContextChallenge from './deeply-data-and-context/Challenge';
+// import SculptureGallery from './adding-interactivity/Example.jsx';
+// import UpdaterExample from './queueing-state-updates/Example.jsx';
+// import ObjectState from './updating-objects-in-state/Example.jsx';
+// import ObjectState2 from './updating-objects-in-state/Example2.jsx';
+// import ObjectState3 from './updating-objects-in-state/Example3.jsx';
+// import ObjectState4 from './updating-objects-in-state/Example4.jsx';
+// import ArrayState from './updating-arrays-in-state/Example.jsx';
+// import ArrayState2 from './updating-arrays-in-state/Example2.jsx';
+// import ArrayState3 from './updating-arrays-in-state/Example3.jsx';
+// import ArrayState4 from './updating-arrays-in-state/Example4.jsx';
+// import ResettingState from './preserving-and-resetting-state/Example.jsx';
+// import PreservingState from './preserving-and-resetting-state/Example2.jsx';
+// import ResettingChat from './preserving-and-resetting-state/Example3.jsx';
+// import ReducerExample from './state-into-reducer/Example.jsx';
+// import ReducerImmerExample from './state-into-reducer/ExampleImmer.jsx';
+// import ReducerWithContext from './scaling-up-with-reducer-and-context/Example.jsx';
+// import Stopwatch from './eferencing-values-with-refs/Example';
+// import DomNodeRef from './manipulating-the-dom-with-refs/Example';
+// import CatListRef from './manipulating-the-dom-with-refs/Example2';
+// import EffectExample from './synchronizing-with-effects/Example';
+// import EffectExample2 from './synchronizing-with-effects/Example2';
+// import CustomHookExample from './reusing-logic-with-custom-hooks/Example';
+// import CustomHookExample2 from './reusing-logic-with-custom-hooks/Example2';
+// import UseCallbackExample from './use-callback-hook/Example';
+import UseDeferredValueExample from './use-deferred-value-hook/Example';
 
 export default function App() {
   return (
@@ -82,7 +83,8 @@ export default function App() {
       {/* <EffectExample2 /> */}
       {/* <CustomHookExample /> */}
       {/* <CustomHookExample2 /> */}
-      <UseCallbackExample />
+      {/* <UseCallbackExample /> */}
+      <UseDeferredValueExample />
     </div>
   );
 }
