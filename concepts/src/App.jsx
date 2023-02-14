@@ -37,7 +37,9 @@ import './App.css';
 // import CustomHookExample from './reusing-logic-with-custom-hooks/Example';
 // import CustomHookExample2 from './reusing-logic-with-custom-hooks/Example2';
 // import UseCallbackExample from './use-callback-hook/Example';
-import UseDeferredValueExample from './use-deferred-value-hook/Example';
+// import UseDeferredValueExample from './use-deferred-value-hook/Example';
+// import UseImperativeHandleExample from './use-imperative-handle-hook/Example';
+import UseLayoutEffectExample from './use-layout-effect-hook/Example';
 
 export default function App() {
   return (
@@ -84,7 +86,9 @@ export default function App() {
       {/* <CustomHookExample /> */}
       {/* <CustomHookExample2 /> */}
       {/* <UseCallbackExample /> */}
-      <UseDeferredValueExample />
+      {/* <UseDeferredValueExample /> */}
+      {/* <UseImperativeHandleExample /> */}
+      <UseLayoutEffectExample />
     </div>
   );
 }
