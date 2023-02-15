@@ -3,7 +3,7 @@ import { useLayoutEffect, useRef, useState } from 'react';
 export default function Example() {
   return (
     <div style={{ position: 'relative', display: 'grid', gap: '4rem', backgroundColor: '#fff', padding: '0.5rem' }}>
-      <Button tooltipContent={<span>I'm above a button</span>}>
+      <Button tooltipContent={<span>I'm below a button</span>}>
         Hover to show the tooptip <strong>below</strong>
       </Button>
       <Button tooltipContent={<span>I'm above a button</span>}>

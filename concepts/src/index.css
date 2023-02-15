@@ -74,6 +74,8 @@ button > * {
 }
 :root.light button {
   background-color: #f9f9f9;
+  color: inherit;
+  border: 1px solid currentColor;
 }
 
 @media (prefers-color-scheme: light) {

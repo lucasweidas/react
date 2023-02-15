@@ -39,7 +39,8 @@ import './App.css';
 // import UseCallbackExample from './use-callback-hook/Example';
 // import UseDeferredValueExample from './use-deferred-value-hook/Example';
 // import UseImperativeHandleExample from './use-imperative-handle-hook/Example';
-import UseLayoutEffectExample from './use-layout-effect-hook/Example';
+// import UseLayoutEffectExample from './use-layout-effect-hook/Example';
+import UseMemoExample from './use-memo-hook/Example';
 
 export default function App() {
   return (
@@ -88,7 +89,8 @@ export default function App() {
       {/* <UseCallbackExample /> */}
       {/* <UseDeferredValueExample /> */}
       {/* <UseImperativeHandleExample /> */}
-      <UseLayoutEffectExample />
+      {/* <UseLayoutEffectExample /> */}
+      <UseMemoExample />
     </div>
   );
 }
