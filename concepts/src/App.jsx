@@ -41,7 +41,8 @@ import './App.css';
 // import UseImperativeHandleExample from './use-imperative-handle-hook/Example';
 // import UseLayoutEffectExample from './use-layout-effect-hook/Example';
 // import UseMemoExample from './use-memo-hook/Example';
-import UseSyncExternalStoreExample from './use-sync-external-store-hook/Example';
+// import UseSyncExternalStoreExample from './use-sync-external-store-hook/Example';
+import UseTransitionExample from './use-transition-hook/Example';
 
 export default function App() {
   return (
@@ -92,7 +93,8 @@ export default function App() {
       {/* <UseImperativeHandleExample /> */}
       {/* <UseLayoutEffectExample /> */}
       {/* <UseMemoExample /> */}
-      <UseSyncExternalStoreExample />
+      {/* <UseSyncExternalStoreExample /> */}
+      <UseTransitionExample />
     </div>
   );
 }
