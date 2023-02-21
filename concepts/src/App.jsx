@@ -42,7 +42,9 @@ import './App.css';
 // import UseLayoutEffectExample from './use-layout-effect-hook/Example';
 // import UseMemoExample from './use-memo-hook/Example';
 // import UseSyncExternalStoreExample from './use-sync-external-store-hook/Example';
-import UseTransitionExample from './use-transition-hook/Example';
+// import UseTransitionExample from './use-transition-hook/Example';
+import RenderPropsExample from './render-props-pattern/Example';
+import HigherOrderComponetsExample from './higher-order-components-pattern/Example';
 
 export default function App() {
   return (
@@ -94,7 +96,9 @@ export default function App() {
       {/* <UseLayoutEffectExample /> */}
       {/* <UseMemoExample /> */}
       {/* <UseSyncExternalStoreExample /> */}
-      <UseTransitionExample />
+      {/* <UseTransitionExample /> */}
+      <RenderPropsExample />
+      <HigherOrderComponetsExample />
     </div>
   );
 }
